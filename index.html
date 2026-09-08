@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOIRÉ — After Dark</title>
+<meta name="description" content="NOIRÉ. A new standard for everyday wear. Limited seasonal drops, oversized silhouettes, night-shot editorial.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Custom cursor (desktop only, driven by animations.js) -->
+<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <div class="brand-block">
+      <a href="#" class="wordmark">NOIRÉ</a>
+      <span class="brand-sub">Studio / 26</span>
+    </div>
+
+    <nav class="header-nav" aria-label="Primary">
+      <a href="#latest-drop"><span>Shop</span></a>
+      <a href="#horizontal-collection"><span>Collection</span></a>
+      <a href="#categories"><span>Category</span></a>
+      <a href="#site-footer"><span>About</span></a>
+    </nav>
+
+    <div class="header-side">
+      <button class="text-icon-btn" id="searchToggle" aria-label="Search" aria-expanded="false" aria-controls="searchPanel">Search</button>
+      <button class="text-icon-btn cart-btn" id="cartToggle" aria-label="Open cart" aria-expanded="false" aria-controls="cartDrawer">
+        Cart <span class="cart-count-brackets">[<span id="cartCount">0</span>]</span>
+      </button>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="search-panel-inner">
+      <label for="searchInput" class="visually-hidden">Search products</label>
+      <input type="text" id="searchInput" placeholder="Search the archive...">
+      <button class="text-icon-btn" id="searchClose" aria-label="Close search">Close</button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile top bar -->
+<div class="mobile-topbar">
+  <a href="#" class="wordmark">NOIRÉ</a>
+  <div class="mobile-topbar-right">
+    <button class="icon-btn cart-btn" id="cartToggleMobile" aria-label="Open cart">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 5.5H14.5L13.7 13.2C13.6 14 12.9 14.6 12.1 14.6H6.2C5.4 14.6 4.7 14 4.6 13.2L3.8 5.5Z" stroke="currentColor" stroke-width="1.2"/><path d="M6.3 5.5V4.3C6.3 2.9 7.5 1.7 9 1.7C10.5 1.7 11.7 2.9 11.7 4.3V5.5" stroke="currentColor" stroke-width="1.2"/></svg>
+      <span class="cart-count" id="cartCountMobile" hidden>0</span>
+    </button>
+    <button class="menu-toggle" id="menuToggleMobile" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<!-- Fullscreen mobile menu -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <button class="text-icon-btn mobile-nav-close" id="mobileNavClose" aria-label="Close menu">Close</button>
+  <a href="#latest-drop">Shop</a>
+  <a href="#latest-drop">New Drop</a>
+  <a href="#horizontal-collection">Collections</a>
+  <a href="#categories">Category</a>
+  <a href="#site-footer">About</a>
+  <div class="mobile-nav-foot">
+    <button class="text-icon-btn" id="searchToggleMobile">Search</button>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ============================= MARQUEE 1 ============================= -->
+  <div class="marquee marquee--dark" aria-hidden="true">
+    <div class="marquee-track">
+      <span>NOIRÉ&nbsp;&nbsp;/&nbsp;&nbsp;New Season&nbsp;&nbsp;/&nbsp;&nbsp;NOIRÉ&nbsp;&nbsp;/&nbsp;&nbsp;New Season&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+      <span>NOIRÉ&nbsp;&nbsp;/&nbsp;&nbsp;New Season&nbsp;&nbsp;/&nbsp;&nbsp;NOIRÉ&nbsp;&nbsp;/&nbsp;&nbsp;New Season&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+<!-- ===================== HORIZONTAL COLLECTION ===================== -->
+  <section class="horizontal-section" id="horizontal-collection">
+    <div class="section-head section-head--inline reveal">
+      <span class="eyebrow">Drag to explore</span>
+      <h2>The Collections</h2>
+    </div>
+
+    <div class="horizontal-track" id="horizontalTrack">
+      <div class="h-panel" data-cursor="View">
+        <img class="ph-img" data-src="assets/images/product-08.jpg" alt="Autumn collection">
+        <div class="h-panel-label"><span>01</span><p>Autumn</p></div>
+      </div>
+      <div class="h-panel" data-cursor="View">
+        <img class="ph-img" data-src="assets/images/product-04.jpg" alt="Winter collection">
+        <div class="h-panel-label"><span>02</span><p>Winter</p></div>
+      </div>
+      <div class="h-panel" data-cursor="View">
+        <img class="ph-img" data-src="assets/images/product-05.jpg" alt="Essentials collection">
+        <div class="h-panel-label"><span>03</span><p>Essentials</p></div>
+      </div>
+      <div class="h-panel" data-cursor="View">
+        <img class="ph-img" data-src="assets/images/product-06.jpg" alt="Studio collection">
+        <div class="h-panel-label"><span>04</span><p>Studio</p></div>
+      </div>
+      <div class="h-panel" data-cursor="View">
+        <img class="ph-img" data-src="assets/images/product-07.jpg" alt="Autumn collection">
+        <div class="h-panel-label"><span>01</span><p>Autumn</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= LATEST DROP ============================= -->
+  <section class="section" id="latest-drop">
+    <div class="section-head reveal">
+      <span class="eyebrow">Shop the drop</span>
+      <h2>Latest Drop</h2>
+    </div>
+
+    <div class="feature-grid" id="featuredGrid">
+      <article class="feature-product feature-product--tall reveal" data-product-id="fd-01">
+        <div class="product-media" data-cursor="View Product">
+          <img class="ph-img" data-src="" alt="">
+        </div>
+        <div class="product-meta">
+          <span class="product-number"></span>
+          <div class="product-text">
+            <p class="product-name"></p>
+            <p class="product-category"></p>
+          </div>
+          <p class="product-price"></p>
+        </div>
+        <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+      </article>
+
+      <div class="feature-stack">
+        <article class="feature-product reveal" data-product-id="fd-02">
+          <div class="product-media" data-cursor="View Product">
+            <img class="ph-img" data-src="" alt="">
+          </div>
+          <div class="product-meta">
+            <span class="product-number"></span>
+            <div class="product-text">
+              <p class="product-name"></p>
+              <p class="product-category"></p>
+            </div>
+            <p class="product-price"></p>
+          </div>
+          <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+        </article>
+
+        <article class="feature-product reveal" data-product-id="fd-03">
+          <div class="product-media" data-cursor="View Product">
+            <img class="ph-img" data-src="" alt="">
+          </div>
+          <div class="product-meta">
+            <span class="product-number"></span>
+            <div class="product-text">
+              <p class="product-name"></p>
+              <p class="product-category"></p>
+            </div>
+            <p class="product-price"></p>
+          </div>
+          <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+        </article>
+      </div>
+
+      <article class="feature-product feature-product--tall reveal" data-product-id="fd-04">
+        <div class="product-media" data-cursor="View Product">
+          <img class="ph-img" data-src="" alt="">
+        </div>
+        <div class="product-meta">
+          <span class="product-number"></span>
+          <div class="product-text">
+            <p class="product-name"></p>
+            <p class="product-category"></p>
+          </div>
+          <p class="product-price"></p>
+        </div>
+        <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== ESSENTIALS SHOWCASE =====================-->
+  <section class="section" id="essentials">
+    <div class="section-head reveal">
+      <span class="eyebrow">Core wardrobe</span>
+      <h2>Essentials</h2>
+    </div>
+
+    <div class="essentials-grid" id="essentialsGrid">
+      <article class="feature-product feature-product--wide reveal" data-product-id="es-05">
+        <div class="product-media" data-cursor="View Product">
+          <img class="ph-img" data-src="" alt="">
+        </div>
+        <div class="product-meta">
+          <span class="product-number"></span>
+          <div class="product-text">
+            <p class="product-name"></p>
+            <p class="product-category"></p>
+          </div>
+          <p class="product-price"></p>
+        </div>
+        <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+      </article>
+
+      <div class="essentials-side">
+        <article class="feature-product reveal" data-product-id="es-06">
+          <div class="product-media" data-cursor="View Product">
+            <img class="ph-img" data-src="" alt="">
+          </div>
+          <div class="product-meta">
+            <span class="product-number"></span>
+            <div class="product-text">
+              <p class="product-name"></p>
+              <p class="product-category"></p>
+            </div>
+            <p class="product-price"></p>
+          </div>
+          <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+        </article>
+        <article class="feature-product reveal" data-product-id="es-07">
+          <div class="product-media" data-cursor="View Product">
+            <img class="ph-img" data-src="" alt="">
+          </div>
+          <div class="product-meta">
+            <span class="product-number"></span>
+            <div class="product-text">
+              <p class="product-name"></p>
+              <p class="product-category"></p>
+            </div>
+            <p class="product-price"></p>
+          </div>
+          <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+        </article>
+        <article class="feature-product reveal" data-product-id="es-08">
+          <div class="product-media" data-cursor="View Product">
+            <img class="ph-img" data-src="" alt="">
+          </div>
+          <div class="product-meta">
+            <span class="product-number"></span>
+            <div class="product-text">
+              <p class="product-name"></p>
+              <p class="product-category"></p>
+            </div>
+            <p class="product-price"></p>
+          </div>
+          <button type="button" class="product-add" data-action="quick-add">+ Add to cart</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= MARQUEE 2 ============================= -->
+  <div class="marquee marquee--light" aria-hidden="true">
+    <div class="marquee-track marquee-track--reverse">
+      <span>Built for the everyday&nbsp;&nbsp;—&nbsp;&nbsp;Built for the everyday&nbsp;&nbsp;—&nbsp;&nbsp;Built for the everyday&nbsp;&nbsp;—&nbsp;&nbsp;</span>
+      <span>Built for the everyday&nbsp;&nbsp;—&nbsp;&nbsp;Built for the everyday&nbsp;&nbsp;—&nbsp;&nbsp;Built for the everyday&nbsp;&nbsp;—&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===================== CATEGORY NAVIGATION ===================== -->
+  <section class="section category-section" id="categories">
+    <ul class="category-list">
+      <li class="category-row" data-image="assets/images/product-04.jpg">
+        <button type="button" aria-expanded="false">
+          <span class="category-number">01</span>
+          <span class="category-name">New Arrivals</span>
+        </button>
+        <div class="category-preview"><img class="ph-img" data-src="assets/images/product-04.jpg" alt=""></div>
+      </li>
+      <li class="category-row" data-image="assets/images/product-02.jpg">
+        <button type="button" aria-expanded="false">
+          <span class="category-number">02</span>
+          <span class="category-name">Tops</span>
+        </button>
+        <div class="category-preview"><img class="ph-img" data-src="assets/images/product-02.jpg" alt=""></div>
+      </li>
+      <li class="category-row" data-image="assets/images/product-03.jpg">
+        <button type="button" aria-expanded="false">
+          <span class="category-number">03</span>
+          <span class="category-name">Bottoms</span>
+        </button>
+        <div class="category-preview"><img class="ph-img" data-src="assets/images/product-03.jpg" alt=""></div>
+      </li>
+      <li class="category-row" data-image="assets/images/product-07.jpg">
+        <button type="button" aria-expanded="false">
+          <span class="category-number">04</span>
+          <span class="category-name">Outerwear</span>
+        </button>
+        <div class="category-preview"><img class="ph-img" data-src="assets/images/product-07.jpg" alt=""></div>
+      </li>
+      <li class="category-row" data-image="assets/images/product-08.jpg">
+        <button type="button" aria-expanded="false">
+          <span class="category-number">05</span>
+          <span class="category-name">Accessories</span>
+        </button>
+        <div class="category-preview"><img class="ph-img" data-src="assets/images/product-08.jpg" alt=""></div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer" id="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <p class="wordmark">NOIRÉ</p>
+      <p class="footer-tagline">Studio / 26 — everyday wear, after dark.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Shop</p>
+      <a href="#latest-drop">New Drop</a>
+      <a href="#horizontal-collection">Collections</a>
+      <a href="#about">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Social</p>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 NOIRÉ</p>
+  </div>
+</footer>
+
+<!-- ============================= CART DRAWER ============================= -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button class="text-icon-btn" id="cartClose" aria-label="Close cart">Close</button>
+  </div>
+
+  <div class="cart-body" id="cartBody">
+    <!-- populated by cart.js -->
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">$0</span>
+    </div>
+    <button class="btn btn--primary btn--block" id="checkoutBtn">Checkout</button>
+    <button class="text-icon-btn" id="continueShoppingBtn">Continue Shopping</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
