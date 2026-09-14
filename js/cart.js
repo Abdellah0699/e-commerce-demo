@@ -37,7 +37,7 @@ const Cart = (() => {
   function getItems() { return items; }
   function getCount() { return items.reduce((sum, i) => sum + i.qty, 0); }
   function getSubtotal() { return items.reduce((sum, i) => sum + i.qty * i.price, 0); }
-  function formatPrice(n) { return `$${n.toFixed(0)}`; }
+  function formatPrice(n) { return `${n.toFixed(0)} DA`; }
 
   return { addItem, removeItem, setQty, getItems, getCount, getSubtotal, formatPrice, onChange };
 })();
